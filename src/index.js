@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import styles from './styles.module.css'
 
-export const RoundCarousel = ({ list, width, timer = 2000, color = [] }) => {
+export const RoundCarousel = ({
+  list,
+  width = 500,
+  timer = 2000,
+  color = []
+}) => {
   const [showWord, setShowWord] = useState([list[11]])
   const [number, setNumber] = useState(0)
   let selectedWidth = width
