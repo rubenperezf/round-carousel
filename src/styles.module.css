@@ -1,9 +1,79 @@
-/* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+
+.circle {
+  position: relative;
+  padding: 0;
+
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
 }
+li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%; 
+   cursor: pointer;
+
+
+}
+.text {
+  position: absolute;
+  left: -5%;
+  width: 200%;
+  height: 200%;
+  transform: skewY(60deg) rotate(15deg);
+}
+.activeText{
+  position: absolute;
+  left: -5%;
+  width: 200%;
+  height: 200%;
+  transform: skewY(60deg) rotate(15deg);
+  border: 2px solid black
+
+}
+
+li:first-child {
+  transform: rotate(0deg) skewY(-60deg);
+}
+
+li:nth-child(2) {
+  transform: rotate(30deg) skewY(-60deg);
+}
+li:nth-child(3) {
+  transform: rotate(60deg) skewY(-60deg);
+}
+li:nth-child(4) {
+  transform: rotate(90deg) skewY(-60deg);
+}
+li:nth-child(5) {
+  transform: rotate(120deg) skewY(-60deg);
+}
+li:nth-child(6) {
+  transform: rotate(150deg) skewY(-60deg);
+}
+li:nth-child(7) {
+  transform: rotate(180deg) skewY(-60deg);
+}
+li:nth-child(8) {
+  transform: rotate(210deg) skewY(-60deg);
+}
+li:nth-child(9) {
+  transform: rotate(240deg) skewY(-60deg);
+}
+li:nth-child(10) {
+  transform: rotate(270deg) skewY(-60deg);
+}
+li:nth-child(11) {
+  transform: rotate(300deg) skewY(-60deg);
+}
+li:nth-child(12) {
+  transform: rotate(330deg) skewY(-60deg);
+}
+
+
+
