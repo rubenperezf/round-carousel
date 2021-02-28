@@ -16,7 +16,7 @@ export const RoundCarousel = ({
     if (number !== 100) {
       slide = setTimeout(() => {
         setShowWord(list[number])
-        if (number === 0 || number <= 11) {
+        if (number === 0 || number <= 10) {
           setNumber(number + 1)
         } else {
           setNumber(0)
@@ -55,14 +55,8 @@ export const RoundCarousel = ({
     }
   }
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}
-    >
-      <div style={{ width: '60%' }}>
+    <div clasName={styles.container}>
+      <div className={styles.leftcontainer} style={{ width: '60%' }}>
         <ul
           className={styles.circle}
           style={{
@@ -104,10 +98,11 @@ export const RoundCarousel = ({
               zIndex: -1
             }}
             src={showWord.image}
+            className={styles.image}
           />
         </ul>
       </div>
-      <div style={{ width: '40%', margin: '20px' }}>
+      <div className={styles.rightcontainer}>
         <p style={{ fontSize: '50px', textAlign: 'center' }}>
           {showWord.title}
         </p>

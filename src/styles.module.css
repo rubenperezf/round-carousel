@@ -1,4 +1,19 @@
 
+.container{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+
+
+}
+.leftcontainer{
+  width:60%;
+
+}
+.rightcontainer{
+  width:40%;
+
+}
 
 .circle {
   position: relative;
@@ -73,6 +88,31 @@ li:nth-child(11) {
 }
 li:nth-child(12) {
   transform: rotate(330deg) skewY(-60deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    width:100% !important;
+  }
+  .circle{
+    width: 380px !important;
+    height: 380px !important
+  }
+  .image{
+    width: 250px !important;
+    height: 250px !important;
+    top:17% !important;
+    left:17% !important;
+
+  }
+  .leftcontainer{
+    width: 100%;
+
+  }
+  .rightcontainer{
+    width: 90%;
+    margin:0 auto 
+  }
 }
 
 
