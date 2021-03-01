@@ -55,8 +55,8 @@ export const RoundCarousel = ({
     }
   }
   return (
-    <div clasName={styles.container}>
-      <div className={styles.leftcontainer} style={{ width: '60%' }}>
+    <div className={styles.container}>
+      <div className={styles.leftcontainer}>
         <ul
           className={styles.circle}
           style={{

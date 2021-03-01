@@ -7,11 +7,12 @@
 
 }
 .leftcontainer{
-  width:60%;
+  width:60%
 
 }
 .rightcontainer{
   width:40%;
+  margin-right: 50px 
 
 }
 
@@ -93,6 +94,7 @@ li:nth-child(12) {
 @media only screen and (max-width: 600px) {
   .container{
     width:100% !important;
+    display: block
   }
   .circle{
     width: 380px !important;
@@ -111,7 +113,7 @@ li:nth-child(12) {
   }
   .rightcontainer{
     width: 90%;
-    margin:0 auto 
+    margin:0 auto;
   }
 }
 
