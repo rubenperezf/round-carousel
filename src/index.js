@@ -16,7 +16,7 @@ export const RoundCarousel = ({
     if (number !== 100) {
       slide = setTimeout(() => {
         setShowWord(list[number])
-        if (number === 0 || number <= 10) {
+        if (number === 0 || number <= 11) {
           setNumber(number + 1)
         } else {
           setNumber(0)
