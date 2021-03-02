@@ -7,7 +7,7 @@ export const RoundCarousel = ({
   timer = 2000,
   color = []
 }) => {
-  const [showWord, setShowWord] = useState(list[11])
+  const [showWord, setShowWord] = useState(list[1])
   const [number, setNumber] = useState(0)
   let selectedWidth = width
 
@@ -16,7 +16,7 @@ export const RoundCarousel = ({
     if (number !== 100) {
       slide = setTimeout(() => {
         setShowWord(list[number])
-        if (number === 0 || number <= 11) {
+        if (number === 0 || number <= 10) {
           setNumber(number + 1)
         } else {
           setNumber(0)
