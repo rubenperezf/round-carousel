@@ -7,7 +7,7 @@ export const RoundCarousel = ({
   timer = 2000,
   color = []
 }) => {
-  const [showWord, setShowWord] = useState(list[1])
+  const [showWord, setShowWord] = useState(list[0])
   const [number, setNumber] = useState(0)
   let selectedWidth = width
 
